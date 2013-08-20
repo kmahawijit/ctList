@@ -70,33 +70,12 @@
 	<div class="row-fluid">
   
 		<!-- PHONES IMAGE FOR DESKTOP MEDIA QUERY -->
-		<!--<div class="span5 visible-desktop">
-			<img src="img/phones.png">
-		</div>-->
-	
-		<!-- APP DETAILS -->
-		<div class="span7">
-	
-			<!-- ICON -->
-		<!--	<div class="visible-desktop" id="icon">
-				<img src="img/app_icon.png" />
-			</div>-->
-			<center>
-			<!-- APP NAME -->
+		<div class="span5 visible-desktop">
+		<center>	
 			<div id="app-name">
-				<h1>contactList</h1>
+				<h1>contactList</h1><br>
 			</div>
-			
-			<!-- VERSION -->
-			<!--<div id="version">
-				<span class="version-top label label-inverse">Version 1.0</span>
-			</div>-->
-
-			<body onload="startAddressBook()">
-		<header id="main_head">
-			<!--<h1>contakList</h1>-->
-		</header><br><br><br>
-	<article>
+			<article>
 		<a name="edit"></a>
 		<header><h3>Create a new contact</h3></header>
 		<form method="post" onsubmit="submitContact();">
@@ -110,11 +89,62 @@
 				<li><input id="submit" type="submit" name="submit" value="Add contact"></li>
 			</ul>
 		</form>
-	</article>
-	<hr>
+	</article></center>
+		<!--	<article>
+		<header>
+			<h3>Browse your contacts</h3><br>
+		</header>
+		<form>
+			<select id="search_contacts" onchange="showContact()">
+			</select>
+		</form>
+		<ul id="contacts">
+		</ul>
+		<button type="button" id="remove_all" onclick="clearAllData()">Remove all Contacts</button>
+	</article>-->
+			<!--<img src="img/phones.png">-->
+		</div>
+	
+		<!-- APP DETAILS -->
+		<div class="span7">
+	
+			<!-- ICON -->
+		<!--	<div class="visible-desktop" id="icon">
+				<img src="img/app_icon.png" />
+			</div>-->
+			<center>
+			<!-- APP NAME -->
+			<div id="app-name">
+				<!--<h1>contactList</h1>-->
+			</div>
+			
+			<!-- VERSION -->
+			<!--<div id="version">
+				<span class="version-top label label-inverse">Version 1.0</span>
+			</div>-->
+
+		<body onload="startAddressBook()">
+		<header id="main_head">
+			<!--<h1>contakList</h1>-->
+		</header><br><br><br>
+	<!--<article>
+		<a name="edit"></a>
+		<header><h3>Create a new contact</h3></header>
+		<form method="post" onsubmit="submitContact();">
+			<ul>
+				<li>Name:<br>
+				<input id="name_field" type="text" size="50" value=""></li>
+				<li>Email:<br>
+				<input id="email_field" type="email" size="50" value=""></li>
+				<li>Phone:<br>
+				<input type="text" id="phone_field" name="phone" size="50" value=""><input type="hidden" id="id_field" value=""></li>
+				<li><input id="submit" type="submit" name="submit" value="Add contact"></li>
+			</ul>
+		</form>
+	</article>-->
 	<article>
 		<header>
-			<h3>Browse your contacts</h3>
+			<h3>Browse your contacts</h3><br>
 		</header>
 		<form>
 			<select id="search_contacts" onchange="showContact()">
@@ -124,6 +154,7 @@
 		</ul>
 		<button type="button" id="remove_all" onclick="clearAllData()">Remove all Contacts</button>
 	</article></center>
+</body>
             
 			<!-- TAGLINE -->
 			<!--<div id="tagline">
